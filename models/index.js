@@ -14,20 +14,20 @@ var PlaceSchema = new Schema({
 
 var HotelSchema = new Schema({
 	name: { type: String, required: true},
-	place: { type: [{}], required: true},
+	place: { type: [PlaceSchema], required: true},
 	num_stars: { type: Number, required: true},
 	amenities: { type: String, required: true}
 })
 
 var ActivitySchema = new Schema({
 	name: { type: String, required: true},
-	place: { type: [{}], required: true},
+	place: { type: [PlaceSchema], required: true},
 	age_range: { type: String, required: true}
 })
 
 var RestaurantSchema = new Schema({
 	name: { type: String, required: true},
-	place: { type: [{}], required: true},	
+	place: { type: [PlaceSchema], required: true},	
 	cuisines: { type: String, required: false},
 	price: { type: Number, required: true}
 })
