@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block content %}
+
+  <h3>Items</h3>
+  <hr>
+   {% for hotel in hotels %}
+        {{ hotel.toString() }}
+     {% endfor %}
+{% endblock %}
