@@ -18,7 +18,7 @@ router.get('/', function(req, res, next) {
 	.then(function(allResults) {
   // res.send(allResults[0])
    // console.log(allResults[0])
-		res.render('index', { hotels: allResults[0]});
+		res.render('index', { hotels: allResults[0], restaurants: allResults[1], activities: allResults[2]});
        // res.render('index');
 	}).then(null, next)
 });

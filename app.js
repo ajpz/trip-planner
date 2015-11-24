@@ -4,6 +4,9 @@ var express = require('express'),
     morgan = require('morgan'),
     routes = require('./routes');
 
+
+//GoogleMap API: AIzaSyC9GbDofMpriUZ_YBPv6T2SimS59DnvXc4
+
 var app = express();
 
 app.set('views', __dirname + '/views');
@@ -18,7 +21,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use('/jquery', express.static('./node_modules/jquery/'));
 app.use('/bootstrap', express.static('./node_modules/bootstrap/'));
-app.use(express.static(__dirname + '/public'));
+app.use(express.static('./public'));
 
 
 app.use('/', routes);
