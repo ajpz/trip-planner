@@ -1,0 +1,30 @@
+h1 {
+  color: black; }
+
+.float-right {
+  float: right;
+  height: 50%;
+  background-color: blue; }
+
+.map {
+  background-color: red;
+  height: 100%; }
+
+.width-test {
+  height: 500px;
+  /*    CHANGE THIS LATER
+*/ }
+
+.control-label {
+  padding: 5% 0 0 0;
+  font-size: 1.3em}
+
+.control-label + .col-sm-12 {
+  padding: 0; }
+
+select.dropdown {
+  width: 50%; }
+
+#test{
+    background-color: yellow;
+}

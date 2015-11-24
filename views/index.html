@@ -1,9 +1,48 @@
 {% extends "layout.html" %}
 {% block content %}
-
   <h3>Items</h3>
-  <hr>
-   {% for hotel in hotels %}
-        {{ hotel.toString() }}
-     {% endfor %}
+
+<div class = "container">
+    <div class  = "row width-test">
+        <div class="col-lg-8 map">
+          <h1> I AM THE MAP</h1>
+        </div>
+        <div class="col-lg-4 float-right">
+          <div class="form-group">
+               <label for="hotels" class="col-sm-12 control-label">Hotels</label>
+               <div class="col-sm-12">
+                 <select name="hotels"  class="dropdown">
+                   <option value="open">opasdfahjghjghghjjjhhjghgjjghghjjhgjhgj</option>
+                   <option value="closed">closed</option>
+                 </select>
+                 <button class="btn btn-danger active"> X </button>
+               </div>
+             </div>
+          <div class="form-group">
+               <label for="restaurants" class="col-sm-12 control-label">Restaurants</label>
+               <div class="col-sm-12">
+                 <select name="restaurants" class="dropdown">
+                   <option value="open">opasdfahjghjghghjjjhhjghgjjghghjjhgjhgj</option>
+                   <option value="closed">closed</option>
+                 </select>
+                 <button class="btn btn-danger active"> X </button>
+               </div>
+             </div>
+          <div class="form-group">
+               <label for="thingsToDo" class="col-sm-12 control-label">Things To Do</label>
+               <div class="col-sm-12">
+                 <select name="thingsToDo" class="dropdown">
+                   <option value="open">opasdfahjghjghghjjjhhjghgjjghghjjhgjhgj</option>
+                   <option value="closed">closed</option>
+                 </select>
+                 <button class="btn btn-danger active"> X </button>
+               </div>
+             </div>
+           </div>
+        <div id ="test" class="col-lg-4 float-right">
+          <h1> I AM THE LIST</h1>
+        </div>
+    </div>
+</div>
+
 {% endblock %}
